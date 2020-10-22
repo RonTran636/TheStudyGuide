@@ -20,9 +20,9 @@
             android:title="@string/title_notifications"/>
 
     <item
-            android:id="@+id/navigation_dashboard"
+            android:id="@+id/navigation_application"
             android:icon="@drawable/ic_baseline_assignment"
-            android:title="@string/title_dashboard"/>
+            android:title="@string/title_application"/>
 
 
 

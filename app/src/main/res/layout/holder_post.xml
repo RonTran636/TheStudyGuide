@@ -11,6 +11,8 @@
         <de.hdodenhof.circleimageview.CircleImageView
                 android:layout_width="80dp"
                 android:layout_height="80dp"
+                app:civ_border_width="1dp"
+                app:civ_border_color="@color/accent_white"
                 android:id="@+id/holder_post_avatar"
                 android:src="@mipmap/ic_launcher_round" app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"/>
@@ -50,7 +52,7 @@
                   android:textSize="18sp"
                   android:fontFamily="@font/roboto_regular"
                   android:textColor="@color/accent_black"
-                  android:maxLength="100"
+                  android:maxLines="3"
                   android:text="Set up and initialize Firebase SDK for Cloud Functions following the Firebase instruction. Important! During initialization CLI firebase ask you to override package.json and index.js files. Do not override index.js file! All cloud functions code from"
                   android:layout_marginTop="16dp" app:layout_constraintStart_toStartOf="parent"
                   app:layout_constraintEnd_toEndOf="parent"
@@ -63,6 +65,83 @@
                    app:layout_constraintTop_toBottomOf="@id/holder_post_content"
                    android:src="@drawable/meme" android:layout_marginTop="16dp"
                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"/>
+        <RelativeLayout
+                android:id="@+id/holder_post_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/intrinsic_padding"
+                android:paddingRight="@dimen/intrinsic_padding"
+                android:layout_alignParentStart="true"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:layout_marginTop="8dp"
+                android:textAppearance="@style/TextAppearance.Second.Light"
+                app:layout_constraintTop_toBottomOf="@id/holder_post_image"
+                android:layout_alignParentEnd="true">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:id="@+id/total_likes"
+                      android:text="25 likes"
+                      android:textSize="18sp"
+                      android:fontFamily="@font/roboto_regular"
+                      android:textColor="@color/accent_black"
+                      android:drawablePadding="8dp"
+                      app:drawableStartCompat="@drawable/ic_baseline_like_blue"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:id="@+id/total_comments"
+                      android:text="105 comments"
+                      android:textSize="18sp"
+                      android:fontFamily="@font/roboto_regular"
+                      android:textColor="@color/accent_black"
+                      android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="40dp"
+                      android:id="@+id/holder_post_counter_container"
+                      android:padding="4dp"
+                      android:layout_marginStart="8dp"
+                      app:layout_constraintTop_toBottomOf="@id/holder_post_detail"
+                      android:orientation="horizontal"
+                      android:background="@drawable/container_cover"
+                      android:gravity="center"
+                      android:layout_marginTop="8dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:id="@+id/container_like"
+                      android:layout_weight="1"
+                      android:gravity="start|center_vertical"
+                      android:text="Like"
+                      android:textSize="16sp"
+                      android:fontFamily="@font/roboto_regular"
+                      android:textColor="@color/accent_black"
+                      android:drawablePadding="8dp" app:drawableStartCompat="@drawable/ic_baseline_like"
+                      app:drawableTint="@color/accent_black"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:id="@+id/container_comment"
+                      android:layout_weight="1"
+                      android:text="Comment"
+                      android:textSize="16sp"
+                      android:fontFamily="@font/roboto_regular"
+                      android:textColor="@color/accent_black"
+                      android:drawablePadding="8dp" app:drawableStartCompat="@drawable/ic_baseline_comment"
+                      app:drawableTint="@color/accent_black"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:id="@+id/container_share"
+                      android:layout_weight="1"
+                      android:text="Share"
+                      android:textSize="18sp"
+                      android:fontFamily="@font/roboto_regular"
+                      android:textColor="@color/accent_black"
+                      android:drawablePadding="8dp" app:drawableStartCompat="@drawable/ic_baseline_share"
+                      app:drawableTint="@color/accent_black"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:id="@+id/container_send"
+                      android:layout_weight="1"
+                      android:gravity="start|center_vertical"
+                      android:text="Send"
+                      android:textSize="18sp"
+                      android:fontFamily="@font/roboto_regular"
+                      android:textColor="@color/accent_black"
+                      android:drawablePadding="8dp" app:drawableStartCompat="@drawable/ic_baseline_send"
+                      app:drawableTint="@color/accent_black"/>
+        </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
