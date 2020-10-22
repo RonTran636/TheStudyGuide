@@ -1,4 +1,4 @@
-package com.thestudyguide.activities.home.ui.notifications
+package com.thestudyguide.activities.main.ui.notifications
 
 import android.os.Bundle
 import android.view.LayoutInflater

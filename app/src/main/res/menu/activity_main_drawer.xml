@@ -2,10 +2,9 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
       xmlns:tools="http://schemas.android.com/tools"
       tools:showIn="navigation_view">
-
     <group android:checkableBehavior="single">
         <item
-                android:id="@+id/nav_home"
+                android:id="@+id/drawer_nav_home"
                 android:icon="@drawable/ic_baseline_home"
                 android:title="@string/title_home"/>
         <item
@@ -13,7 +12,12 @@
                 android:icon="@drawable/ic_baseline_settings"
                 android:title="@string/title_setting"/>
         <item
-                android:id="@+id/nav_sign_out"
+            android:id="@+id/drawer_nav_dark_mode"
+            android:title="@string/title_dark_mode"
+            android:icon="@drawable/ic_dark_mode_off"
+            android:actionLayout="@layout/nav_switch"/>
+        <item
+                android:id="@+id/drawer_nav_sign_out"
                 android:icon="@drawable/ic_baseline_exit_to_app"
                 android:title="@string/title_exit"/>
     </group>

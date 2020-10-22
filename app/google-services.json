@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "374955732903",
+    "firebase_url": "https://the-study-guide-59349.firebaseio.com",
+    "project_id": "the-study-guide-59349",
+    "storage_bucket": "the-study-guide-59349.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:374955732903:android:295885b1c9d68f03471082",
+        "android_client_info": {
+          "package_name": "com.thestudyguide"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "374955732903-g1hhv8u4ifr2huo01j5sff8a86qm1809.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thestudyguide",
+            "certificate_hash": "25c2e3a7d4c1db12500998b748e47a37682d1c8b"
+          }
+        },
+        {
+          "client_id": "374955732903-7sa8eo92okheet0eq0o7enonmhsgn2n6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfXa6AkW8tNJvaLX1qYkRRdjBV4ePLGAg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "374955732903-7sa8eo92okheet0eq0o7enonmhsgn2n6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

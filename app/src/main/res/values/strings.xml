@@ -9,4 +9,27 @@
     <string name="str_edited">. Edited</string>
     <string name="nav_header_name">Robert Johnson</string>
     <string name="title_exit">Sign Out</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails</string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="title_activity_splash">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_dark_mode">Dark Mode</string>
+    <string name="rationale_message">
+        <![CDATA[" <sTo continue, turn on device location, which uses Google's location service. "]]></string>
+    <string name="message_permission_denied">
+        <![CDATA[" If you reject permission,you can not use this service Please turn on permissions at [Setting] > [Permission]"]]></string>
 </resources>

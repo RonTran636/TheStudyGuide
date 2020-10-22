@@ -12,13 +12,13 @@
         android:theme="@style/ThemeOverlay.AppCompat.Dark"
         android:orientation="vertical"
         android:gravity="bottom">
-<de.hdodenhof.circleimageview.CircleImageView
-    android:id="@+id/img_avatar"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-    app:civ_border_color="@color/accent_white"
-    app:civ_border_width="1dp"
-    android:src="@mipmap/ic_launcher_round"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_avatar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:civ_border_color="@color/accent_white"
+            app:civ_border_width="1dp"
+            android:src="@mipmap/ic_launcher_round"/>
 
     <TextView
             android:id="@+id/tv_name"

@@ -1,4 +1,4 @@
-package com.thestudyguide.activities.home.ui.home
+package com.thestudyguide.activities.main.ui.home
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

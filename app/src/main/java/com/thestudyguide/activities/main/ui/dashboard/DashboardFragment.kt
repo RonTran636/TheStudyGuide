@@ -1,4 +1,4 @@
-package com.thestudyguide.activities.home.ui.dashboard
+package com.thestudyguide.activities.main.ui.dashboard
 
 import android.os.Bundle
 import android.view.LayoutInflater

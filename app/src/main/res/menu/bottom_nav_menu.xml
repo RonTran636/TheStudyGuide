@@ -2,25 +2,25 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-            android:id="@+id/navigation_home"
+            android:id="@+id/btm_nav_home"
             android:icon="@drawable/ic_baseline_home"
             android:title="@string/title_home"/>
     <item
-            android:id="@+id/navigation_search"
+            android:id="@+id/btm_nav_search"
             android:icon="@drawable/ic_baseline_search"
             android:title="@string/title_search"/>
     <item
-            android:id="@+id/navigation_post"
+            android:id="@+id/btm_nav_post"
             android:icon="@drawable/ic_baseline_post"
             android:title="@string/title_post"/>
 
     <item
-            android:id="@+id/navigation_notifications"
+            android:id="@+id/btm_nav_notification"
             android:icon="@drawable/ic_baseline_notifications"
             android:title="@string/title_notifications"/>
 
     <item
-            android:id="@+id/navigation_application"
+            android:id="@+id/btm_nav_application"
             android:icon="@drawable/ic_baseline_assignment"
             android:title="@string/title_application"/>
 

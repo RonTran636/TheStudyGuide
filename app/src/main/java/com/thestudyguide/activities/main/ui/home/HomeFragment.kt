@@ -1,4 +1,4 @@
-package com.thestudyguide.activities.home.ui.home
+package com.thestudyguide.activities.main.ui.home
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -12,6 +12,11 @@ import com.thestudyguide.R
 class HomeFragment : Fragment() {
 
     private lateinit var homeViewModel: HomeViewModel
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setHasOptionsMenu(true)
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater,
