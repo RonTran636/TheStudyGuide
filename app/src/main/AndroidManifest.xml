@@ -13,7 +13,7 @@
                 android:name=".activities.onboarding.OnBoardingActivity"
                 android:enabled="true"
                 android:exported="true"
-                android:theme="@style/Theme.L"
+                android:theme="@style/FullscreenTheme"
         >
         </activity>
         <activity

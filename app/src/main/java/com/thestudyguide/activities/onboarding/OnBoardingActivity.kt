@@ -17,7 +17,7 @@ import com.thestudyguide.R
 import com.thestudyguide.adapters.SliderAdapter
 import com.thestudyguide.databinding.ActivityOnboardingBinding
 
-@Suppress("DEPRECATION")
+
 class OnBoardingActivity : AppCompatActivity(),View.OnClickListener {
     private lateinit var viewPagerAdapter: SliderAdapter
     private lateinit var binding: ActivityOnboardingBinding
@@ -30,6 +30,7 @@ class OnBoardingActivity : AppCompatActivity(),View.OnClickListener {
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.R) {
             window.setDecorFitsSystemWindows(false)
         }else {
+            @Suppress("DEPRECATION")
             window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
         }
 
@@ -98,6 +99,7 @@ class OnBoardingActivity : AppCompatActivity(),View.OnClickListener {
                 if (tedPermissionResult.isGranted) {
                     Toast.makeText(this, "Permission Granted", Toast.LENGTH_SHORT).show()
                     handler.postDelayed({
+                        //TODO: Change destination Activity
                         startActivity(Intent(this@OnBoardingActivity, LoginActivity::class.java))
                         overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
                     }, 200)
